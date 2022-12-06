@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --soft-blue: #8BACD9;
+    --white: #FFFFFF;
+    --cyan: #00FFF8;
+    --verydarkblue-mainbg: #0D192C;
+    --verydarkblue-cardbg: #15263F;
+    --verydarkblue-line: #2E405A;
+}
+
+main {
+    width: 100%;
+    background-color: var(--verydarkblue-mainbg);
+    height: 100vh;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+}
+
+.nft-card-main {
+    background-color: var(--verydarkblue-cardbg);
+    padding: 20px;
+    max-width: 375px;
+    border-radius: 10px;
+    
+}
+
+.nft-card-main #main-artwork {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nft-card-main .card-content h1 {
+    color: var(--white);
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.nft-card-main .card-content p {
+    color: var(--soft-blue);
+    font-weight: 300;
+    line-height: 1.5em;
+    width: 90%;
+}
+
+.nft-card-main .card-content .card-stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: solid var(--verydarkblue-line) 1px;
+}
+
+.card-stats .ethereum, .card-stats .time-limit {
+    display: flex;
+    align-items: center;
+}
+
+.ethereum img {
+    margin-right: .5rem;
+    
+}
+
+.ethereum #currency-amount {
+    color: var(--cyan);
+    font-weight: 400;
+} 
+
+.time-limit p {
+    margin-left: .5rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    width: 10%;
+    border: var(--white) solid 1px;
+    border-radius: 50%;
+    margin-right: .9rem;
+}
+
+.user-info p span {
+    color: var(--white);
+}
